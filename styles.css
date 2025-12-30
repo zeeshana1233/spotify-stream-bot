@@ -308,16 +308,22 @@ ul {
     100% { transform: translateY(-60px); }
 }
 
-.hero-content {
+.hero > .container {
     position: relative;
     z-index: 2;
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: 0 24px;
+    width: 100%;
+}
+
+.hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-badge {
@@ -331,6 +337,7 @@ ul {
     font-size: 0.875rem;
     color: var(--primary-green);
     margin-bottom: 24px;
+    width: fit-content;
 }
 
 .hero-title {
